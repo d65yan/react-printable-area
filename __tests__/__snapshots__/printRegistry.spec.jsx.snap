@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`printRegistry functionality getHtml when the registered sections have no priority they are presented as registered 1`] = `
+"
+      <div class=\\"undefined\\">
+        <html section2>
+
+<html section3>
+
+<html section1>
+      </div>"
+`;
+
+exports[`printRegistry functionality getHtml when there are registered sections a combination of the getHtml will be returned 1`] = `
+"
+      <div class=\\"undefined\\">
+        <html section3>
+
+<html section1>
+
+<html section2>
+      </div>"
+`;

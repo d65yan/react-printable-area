@@ -1,0 +1,78 @@
+{
+  "name": "react-printable-area",
+  "version": "0.0.0",
+  "description": "Printing sections of a page",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf Area.js Header.js Section.js Trigger.js stable_build/withPrint.js index.js",
+    "start": "styleguidist server",
+    "test": "jest --coverage",
+    "docs": "esdoc ",
+    "lint": "./node_modules/.bin/eslint --ignore-path .gitignore ./src/*.jsx ./src/*.js ./__tests__/*.jsx ./__tests__/*.js",
+    "build": "babel src --out-dir ./ --copy-files --ignore PrintArea.md",
+    "build:demo": "styleguidist build",
+    "prepublish": "npm run build",
+    "pretest": "npm run lint"
+  },
+  "jest": {
+    "preset": "amex-jest-preset-react",
+    "testPathIgnorePatterns": [
+      "/__tests__/helpers/"
+    ]
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "jest": "^23.5.0",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
+    "react": "^16.4.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "amex-jest-preset-react": "^4.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-amex": "^1.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.4.2",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "enzyme-to-json": "^3.0.0",
+    "es6-promise": "^3.1.2",
+    "eslint": "^5.4.0",
+    "eslint-config-amex": "^8.0.0",
+    "exports-loader": "^0.6.3",
+    "file-loader": "^1.1.11",
+    "identity-obj-proxy": "^3.0.0",
+    "import-glob-loader": "^1.1.0",
+    "imports-loader": "^0.6.5",
+    "install": "^0.12.1",
+    "isparta-loader": "^2.0.0",
+    "jsdom": "9.10.0",
+    "jshint": "^2.9.1",
+    "json-loader": "^0.5.2",
+    "npm": "^6.4.0",
+    "react-addons-test-utils": "^15.0.1",
+    "react-styleguidist": "^7.3.0",
+    "react-test-renderer": "^16.0.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.11.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.4"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "contributors": [
+    "Dayan Moreno <d65yan@gmail.com>"
+  ]
+}

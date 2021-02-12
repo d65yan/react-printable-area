@@ -1,0 +1,22 @@
+{
+  "name": "react-printable-area",
+  "version": "0.0.0",
+  "description": "Printing sections of a page",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npx shx cp stable_build/* ./"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": ">=16.4"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "contributors": [
+    "Dayan Moreno <d65yan@gmail.com>"
+  ]
+}

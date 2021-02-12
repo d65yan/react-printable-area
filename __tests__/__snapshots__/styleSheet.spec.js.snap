@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`styles regression 1`] = `
+"
+    <style id=\\"print-styles-for-customClassName\\">
+      @media screen {
+        body .customClassName {
+          display: block;
+          width: 0;
+          height: 0;
+          overflow: hidden;
+        }
+      }
+
+
+      @media print {
+        body>*:not(.customClassName) {
+          display: none !important;
+        }
+        body .customClassName {
+          width: 100%;
+        }
+      }
+    </style>
+  "
+`;

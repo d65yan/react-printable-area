@@ -1,0 +1,32 @@
+## Project Specific
+#################
+
+node_modules
+out
+.coverdata
+.coverrun
+dist
+env
+reports/*
+!reports/.gitkeep
+npm-debug.log
+.sass-cache
+logs/
+./config/development.js
+test-results
+
+
+## OSX
+#################
+
+[Tt]humbs.db
+*.DS_Store
+
+
+
+## Webstorm
+#################
+
+.idea
+
+

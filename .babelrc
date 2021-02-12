@@ -1,0 +1,10 @@
+{
+  "presets": [
+    "env",
+    "react",
+    "amex"
+  ],
+  "plugins": [
+    "transform-class-properties"
+  ]
+}
